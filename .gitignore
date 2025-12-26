@@ -1,81 +1,37 @@
-# Data files - TOO LARGE for GitHub
-data/raw/
-data/processed/
-data/experimental/
-
-# Results - can be regenerated
+# Data files (too large for GitHub)
+data/
 results/figures/process/
 results/logs/
+models/checkpoints/
 
-# Environment files - can be recreated
+# Environment files
 environment_qagnn.yml
 requirements_qagnn.txt
 conda_info.txt
+*.pyc
 
-# Python
-__pycache__/
-*.py[cod]
-*$py.class
-*.so
-.Python
-build/
-dist/
-*.egg-info/
-
-# IDE
-.vscode/
-.idea/
-*.swp
-*.swo
-
-# Jupyter
-.ipynb_checkpoints/
-
-# OS
-.DS_Store
-Thumbs.db
-
-# Temporary
+# Temporary files
 *.tmp
 *.temp
 *.log
+__pycache__/
+.DS_Store
 
-# Large files (should be external)
+# Large specific files
 *.h5
 *.hdf5
 *.npy
 *.npz
 *.pt
 *.pkl
-*.tar.gz
-*.zip
 
-# Backups
-backups/
+# Phase completion flags
+PHASE1_COMPLETE.flag
+PHASE1_COMPLETE.txt
+PHASE2_COMPLETE.txt
 
-# ========== PHASE 2 SPECIFIC IGNORES ==========
-# Model checkpoints and large files
-models/checkpoints/
-models/final/*.pt
-models/final/*.pkl
-models/final/*.onnx
-
-# Phase 2 processed data
-data/processed/phase2/
-data/processed/inverse_designs.csv
-data/processed/model_predictions.npy
-data/processed/feature_importance.npy
-
-# Large results files
-results/figures/nature/*.tiff
-results/figures/process/phase2/*.png
-results/phase2/
-results/logs/phase2/*.csv
-results/logs/phase2/*.json
-
-# Temporary files
-*.tmp
-*.temp
-*.log
-*.pyc
-__pycache__/
+# Backup and temporary scripts
+fix_*.sh
+test_*.sh
+verify_*.sh
+monitor_*.sh
