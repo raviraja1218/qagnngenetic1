@@ -1,0 +1,5 @@
+Parameter,Symbol,Range,Mean,Std,Biological_Meaning
+w1,w1,0.18-8.45,4.38,2.25,Transcription weight 1
+w2,w2,0.16-8.46,4.31,2.27,Transcription weight 2
+w3,w3,0.16-8.50,4.52,2.48,Transcription weight 3
+Accuracy,A,0.352-0.610,0.466,0.065,Computational accuracy

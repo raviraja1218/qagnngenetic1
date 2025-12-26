@@ -1,0 +1,22 @@
+circuits:
+  batch_size: 1000
+  num_batches: 10
+  parameters:
+    alpha: 0.5
+    beta: 0.5
+    gamma_m: 0.05
+    gamma_p: 0.01
+    w1_range:
+    - 0.15
+    - 8.5
+    w2_range:
+    - 0.15
+    - 8.5
+    w3_range:
+    - 0.15
+    - 8.5
+  simulation:
+    dt: 1.0
+    t_max: 300
+    time_steps: 300
+  total_simulations: 10000

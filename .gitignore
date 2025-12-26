@@ -1,0 +1,46 @@
+# Data files (too large for GitHub - use Git LFS or separate storage)
+data/raw/
+data/processed/
+data/experimental/
+
+# Model files
+models/checkpoints/
+
+# Results (can regenerate)
+results/figures/process/
+results/logs/
+
+# Environment files (can recreate)
+environment_qagnn.yml
+requirements_qagnn.txt
+conda_info.txt
+
+# Python cache
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Temporary
+*.tmp
+*.temp
+*.log
+
+# Large output files
+*.h5
+*.hdf5
+*.npy
+*.npz
+*.pt
+*.pkl
