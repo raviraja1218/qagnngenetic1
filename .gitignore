@@ -1,46 +1,44 @@
-# Data files (too large for GitHub - use Git LFS or separate storage)
+# Data files (too large for GitHub)
 data/raw/
 data/processed/
 data/experimental/
 
-# Model files
+# Models and checkpoints
 models/checkpoints/
+models/final/  # Only keep architecture/config, not weights
 
 # Results (can regenerate)
 results/figures/process/
 results/logs/
+results/figures/nature/  # Will add Nature figures manually
 
-# Environment files (can recreate)
+# Environment and system
 environment_qagnn.yml
 requirements_qagnn.txt
 conda_info.txt
-
-# Python cache
+.vscode/
+.idea/
 __pycache__/
 *.py[cod]
 *$py.class
 *.so
 .Python
 
-# IDE
-.vscode/
-.idea/
-*.swp
-*.swo
-
-# OS
+# OS files
 .DS_Store
 Thumbs.db
 
-# Temporary
+# Temporary files
 *.tmp
 *.temp
 *.log
-
-# Large output files
-*.h5
-*.hdf5
+*.h5  # HDF5 files are large
 *.npy
 *.npz
-*.pt
 *.pkl
+*.pt
+
+# Large output files
+*.pdf
+*.png  # Can regenerate from code
+*.tiff  # Nature figures - add manually when final
