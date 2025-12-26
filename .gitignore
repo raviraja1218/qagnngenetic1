@@ -1,0 +1,54 @@
+# Data files - TOO LARGE for GitHub
+data/raw/
+data/processed/
+data/experimental/
+
+# Results - can be regenerated
+results/figures/process/
+results/logs/
+
+# Environment files - can be recreated
+environment_qagnn.yml
+requirements_qagnn.txt
+conda_info.txt
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+dist/
+*.egg-info/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Jupyter
+.ipynb_checkpoints/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Temporary
+*.tmp
+*.temp
+*.log
+
+# Large files (should be external)
+*.h5
+*.hdf5
+*.npy
+*.npz
+*.pt
+*.pkl
+*.tar.gz
+*.zip
+
+# Backups
+backups/
