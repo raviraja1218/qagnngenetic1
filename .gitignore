@@ -52,3 +52,30 @@ Thumbs.db
 
 # Backups
 backups/
+
+# ========== PHASE 2 SPECIFIC IGNORES ==========
+# Model checkpoints and large files
+models/checkpoints/
+models/final/*.pt
+models/final/*.pkl
+models/final/*.onnx
+
+# Phase 2 processed data
+data/processed/phase2/
+data/processed/inverse_designs.csv
+data/processed/model_predictions.npy
+data/processed/feature_importance.npy
+
+# Large results files
+results/figures/nature/*.tiff
+results/figures/process/phase2/*.png
+results/phase2/
+results/logs/phase2/*.csv
+results/logs/phase2/*.json
+
+# Temporary files
+*.tmp
+*.temp
+*.log
+*.pyc
+__pycache__/
