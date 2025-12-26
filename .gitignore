@@ -1,37 +1,41 @@
 # Data files (too large for GitHub)
 data/
+models/checkpoints/
 results/figures/process/
 results/logs/
-models/checkpoints/
 
-# Environment files
-environment_qagnn.yml
-requirements_qagnn.txt
-conda_info.txt
+# Environment and cache
 *.pyc
-
-# Temporary files
-*.tmp
-*.temp
-*.log
 __pycache__/
 .DS_Store
+.vscode/
+.ipynb_checkpoints/
 
-# Large specific files
+# Large binary files
 *.h5
 *.hdf5
 *.npy
 *.npz
 *.pt
 *.pkl
+*.tar.gz
+*.zip
+
+# Temporary files
+*.tmp
+*.temp
+*.log
 
 # Phase completion flags
-PHASE1_COMPLETE.flag
-PHASE1_COMPLETE.txt
-PHASE2_COMPLETE.txt
+PHASE*.txt
+PHASE*.flag
 
-# Backup and temporary scripts
-fix_*.sh
-test_*.sh
-verify_*.sh
-monitor_*.sh
+# Specific large files to exclude
+phase1_data.tar.gz
+phase1_visualizations.tar.gz
+packages.microsoft.gpg
+
+# Test and temporary scripts (keep source only)
+test_*.py
+fix_*.py
+recover_*.sh
